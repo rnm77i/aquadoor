@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>AQUADOOR</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #668f9f;
+        }
+        
+           nav-link a1{color:white;margin-left: 80px; font-size: 20px;}
+            img {
+                position: absolute;
+                top: 2px;
+                right: 6px;
+
+            }
+
+        .map-container {
+            width: 80%;
+            max-width: 800px;
+            height: 450px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        /* From Uiverse.io by adamgiebl */ 
+/* Inspired by twitter.com/marina_uiux */
+
+.button {
+  font-size: 17px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
+  color: rgb(218, 218, 218);
+  border: none;
+  padding: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
+  margin-left: 120px;
+
+ 
+  
+}
+
+.button span {
+  border-radius: 10px;
+  padding: 0.8em 1.3em;
+  padding-right: 1.2em;
+  text-shadow: 0px 0px 20px #4b4b4b;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  transition: all 0.3s;
+  background-color: rgb(29, 29, 29);
+  background-image: radial-gradient(at 95% 89%, rgb(15, 15, 15) 0px, transparent 50%), radial-gradient(at 0% 100%, rgb(17, 17, 17) 0px, transparent 50%), radial-gradient(at 0% 0%, rgb(29, 29, 29) 0px, transparent 50%);
+}
+
+.button:hover span {
+  background-color: rgb(26, 25, 25);
+}
+
+.button-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-conic-gradient(rgb(48, 47, 47) 0.0000001%, rgb(51, 51, 51) 0.000104%) 60% 60%/600% 600%;
+  filter: opacity(10%) contrast(105%);
+  -webkit-filter: opacity(10%) contrast(105%);
+}
+
+.button svg {
+  width: 15px;
+  height: 15px;
+}
+       
+    </style>
+</head>
+<body>
+    
+     <nav class="navbar navbar-expand-sm  navbar-dark fixed-top"  >
+
+            <div class="container-fluid">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="#home"><img src="logoro.png" alt="alt" height="180" width="180"/></a>
+                    </li>
+                    <li class="nav-item">
+                        
+                        <a class="nav-link a1" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        
+                        <a class="nav-link a1" href="activity.html">back</a>
+                    </li>
+                   
+                   
+                </ul>
+            </div>
+              
+              </nav>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28810.11187420552!2d55.526924599830494!3d25.49624105365871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f9ca7f3d91af%3A0x5ed300739105f4ea!2z2KjYrdixINin2YTYrdmF2LHZitmH!5e0!3m2!1sar!2sae!4v1740122008957!5m2!1sar!2sae" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    
+   <!-- From Uiverse.io by adamgiebl --> 
+<button class="button">
+  <div class="button-overlay"></div>
+  <span>Camera <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+  <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+  <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+</svg></span>
+  
+</button>
+</body>
+</html>
